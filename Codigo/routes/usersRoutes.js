@@ -19,9 +19,16 @@ router.post("/adduser", async function (req, res, next) {
   res.status(result.status).send(result);
 });
 
+router.get('/:id', async function (req, res, next) {
+  let id = req.params.id;
+  console.log("Sending user with id " + id);
+  let result = await uModel.getUserById(id);
+  res.status(result.status).send(result.result);
+});
+
 router.get("/images",async function (req, res, next) {
-  let result = await uModel.AllPhotos();
-  res.status(result.status).send(result);
+  let images = await uModel.AllPhotos();
+  res.status(images.status).send(images.result);
 });
 
 
