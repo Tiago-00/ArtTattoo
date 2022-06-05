@@ -1,0 +1,28 @@
+create table Utilizador( ID_U serial, 
+					Use_nome varchar (20) not null, 
+                    Use_email varchar (30) not null,
+					Use_pass varchar (30) not null,
+					primary Key ( Id_U));
+
+create table Imagens ( ID_I serial,
+					  Image_nome varchar(40) not null,
+					  Image_url varchar(1000) not null,
+					  primary key (ID_I));
+
+create table Utilizador_Imagens (ID_U_I serial,
+								UI_ID_U int null,
+								UI_ID_I int null,
+								primary key (ID_U_I));
+
+
+alter table Utilizador_Imagens add constraint Utilizador_Imagens_fk_Utilizador
+			foreign key (UI_ID_U) references Utilizador(ID_U)
+            ON DELETE NO ACTION ON UPDATE NO ACTION;
+                             
+alter table Utilizador_Imagens add constraint Utilizador_Imagens_fk_Imagens
+			foreign key (UI_ID_I) references Imagens(ID_I)
+            ON DELETE NO ACTION ON UPDATE NO ACTION;  
+
+
+					  
+

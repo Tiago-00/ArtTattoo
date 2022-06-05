@@ -1,0 +1,8 @@
+
+insert into Imagens(Image_nome,Image_url) values ('Boneca','http://gau.cm-lisboa.pt/fileadmin/templates/gau/app_v2/img.php?ficheiro_id=47218');
+insert into Imagens(Image_nome,Image_url) values ('Passaro','http://gau.cm-lisboa.pt/fileadmin/templates/gau/app_v2/img.php?ficheiro_id=9167');
+insert into Imagens(Image_nome,Image_url) values ('Dinossauro','http://gau.cm-lisboa.pt/fileadmin/templates/gau/app_v2/img.php?ficheiro_id=47396');
+insert into Imagens(Image_nome,Image_url) values ('Rosa','https://i.postimg.cc/TY09JXkf/rosa.png');
+insert into Imagens(Image_nome,Image_url) values ('Astronauta','https://i.postimg.cc/x1bX6xXT/astronauta.png');
+insert into Imagens(Image_nome,Image_url) values ('Dragão','https://i.postimg.cc/L4Ch2Kf8/Dragao.png');
+insert into Imagens(Image_nome,Image_url) values ('Leão','https://i.postimg.cc/ry3cf8xx/Le-o.png');
